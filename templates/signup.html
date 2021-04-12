@@ -1,0 +1,27 @@
+<style>
+body{
+    color: white;
+    background-color: #0A0B1D;
+
+}
+.register{
+            background-color:#984DE5;
+            color: white;
+            margin: 30px;
+            padding: 10px 20px 10px 20px;
+            font-size: 17px;
+        } 
+#register:hover{
+            color: white;
+        }
+
+</style>
+
+{% block content %}
+<h2>Sign up</h2>
+<form method="post">
+{% csrf_token %}
+{{ form.as_p }}
+<button type="submit" class="btn btn-primary, register" id="register">Sign up</button>
+</form>
+{% endblock content %}
