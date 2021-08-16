@@ -8,6 +8,7 @@ requests = "*"
 django = "*"
 whitenoise = "*"
 gunicorn = "*"
+django-crispy-forms = "*"
 
 [dev-packages]
 
